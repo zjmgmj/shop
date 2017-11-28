@@ -6,7 +6,8 @@ $(function() {
 		$plus = $('#plus'),
 		$minus = $('#minus'),
 		$skuNum = $('#skuNum'),
-		$sc_btn = $('#sc_btn');
+		$sc_btn = $('#sc_btn'),
+		$list = $('.list');
 
 	function BoxHide() {
 		$('.mask').hide();
@@ -38,7 +39,12 @@ $(function() {
 			$skuNum.val(num);
 		}
 	});
-	
+
+	$list.click(function() {
+		$list.removeClass('active');
+		$(this).addClass('active');
+	})
+
 	//收藏
 	$sc_btn.click(function() {
 		$(this).toggleClass('icon-shoucang2');
