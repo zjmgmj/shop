@@ -2,7 +2,7 @@ $(function() {
 	mui.init();
 	var $close = $('#close_icon,.mask'),
 		$mask = $('.mask'),
-		$BoxBtn = $('#box_btn,#nav_btn'),
+		$BoxBtn = $('#box_btn,#nav_btn,#nav_buy'),
 		$plus = $('#plus'),
 		$minus = $('#minus'),
 		$skuNum = $('#skuNum'),
