@@ -4,6 +4,30 @@ body {
 .mui-content {
   margin-bottom: 2.5rem;
 }
+.header_icon {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 .3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  top: .5rem;
+  z-index: 998;
+}
+.header_icon p {
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: .3rem;
+  height: 1.4rem;
+  width: 1.4rem;
+  text-align: center;
+  line-height: 1.4rem;
+}
 .p_title {
   color: #333;
   padding: .3rem 0;
@@ -311,6 +335,10 @@ body {
   padding: .25rem;
   text-align: center;
   border-right: 1px solid #e7e7e7;
+}
+.bottom_nav .nav_kf .icon-shoucang_xuanzhongzhuangtai,
+.bottom_nav .nav_sc .icon-shoucang_xuanzhongzhuangtai {
+  color: #FF9500;
 }
 .bottom_nav .nav_cart,
 .bottom_nav .nav_buy {

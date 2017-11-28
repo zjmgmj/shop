@@ -5,7 +5,8 @@ $(function() {
 		$BoxBtn = $('#box_btn,#nav_btn'),
 		$plus = $('#plus'),
 		$minus = $('#minus'),
-		$skuNum = $('#skuNum');
+		$skuNum = $('#skuNum'),
+		$sc_btn = $('#sc_btn');
 
 	function BoxHide() {
 		$('.mask').hide();
@@ -36,6 +37,11 @@ $(function() {
 			num--;
 			$skuNum.val(num);
 		}
-
+	});
+	
+	//收藏
+	$sc_btn.click(function() {
+		$(this).toggleClass('icon-shoucang2');
+		$(this).toggleClass('icon-shoucang_xuanzhongzhuangtai');
 	});
 });
